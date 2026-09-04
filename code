@@ -1,0 +1,33 @@
+SELECT first_name,
+       last_name,
+       department_code
+FROM l_employees
+
+
+WHERE department_code IN ('SAL', 'SHP', 'ACT');
+SELECT employee_id,
+       first_name,
+       last_name
+FROM l_employees
+WHERE employee_id BETWEEN 201 AND 205;
+
+
+
+SELECT employee_id,
+       first_name,
+       last_name
+FROM l_employees
+WHERE TO_CHAR(employee_id) LIKE '%1%';
+
+SELECT *
+FROM l_employees
+WHERE manager_id IS NULL;
+
+SELECT *
+FROM l_employees
+WHERE manager_id IS NULL;
+
+
+SELECT department_name AS dept
+FROM l_departments
+ORDER BY dept ASC;
